@@ -5,8 +5,6 @@
 1. **Enable Shell Access** for the cPanel account (Terminal access).
 2. Let **AutoSSL** run on the domain.
 
----
-
 ### ⚙️ Create NodeJS App in cPanel
 
 3. Go to **"Setup Node.js App"** in cPanel.
@@ -17,8 +15,6 @@
    - ❗ Do **not** set custom application paths or add other settings.
    - The default startup file (`app.js`) will be changed later.
 6. After creation, **copy the virtual environment activation command** from the top of the app page.
-
----
 
 ### 💻 Install N8N via Terminal
 
@@ -50,6 +46,7 @@ npm install n8n
 13. Change the Application Mode to `production`.
 
 🔐 Final Steps
+
 14. Open your domain in a browser.
 15. Create an owner account – this will be used for login.
 16. Register a community license (optional) to unlock premium features.
@@ -62,4 +59,4 @@ To keep n8n up to date automatically:
 3. Schedule the workflow to run every 24 hours.
     🔁 Also remember to update the NodeJS version in cPanel annually to stay within supported versions.
 
-**Source** [MattH](https://community.n8n.io/u/MattH)
+**Source:** [MattH](https://community.n8n.io/u/MattH)
