@@ -11,7 +11,7 @@
 
 3. Go to **"Setup Node.js App"** in cPanel.
 4. Enter:
-   - **Node.js version** (e.g., 18.x)
+   - **Node.js version** (e.g., 20.x)
    - **Application mode**: `development`
 5. Click **Create**.
    - ❗ Do **not** set custom application paths or add other settings.
@@ -28,6 +28,8 @@
 
 ```bash
 npm init -y
+```
+```bash
 npm install n8n
 ```
 
@@ -40,9 +42,9 @@ npm install n8n
 | Variable                  | Value                                  |
 | ------------------------- | -------------------------------------- |
 | `N8N_BASIC_AUTH_ACTIVE`   | `true`                                 |
-| `N8N_BASIC_AUTH_USER`     | `[your-username]`                      |
-| `N8N_BASIC_AUTH_PASSWORD` | `[your-password]`                      |
-| `N8N_HOST`                | `0.0.0.0`                              |
+| `N8N_BASIC_AUTH_USER`     | `[username]`                           |
+| `N8N_BASIC_AUTH_PASSWORD` | `[password]`                           |
+| `N8N_HOST`                | `set to 0.0.0.0`                       |
 | `WEBHOOK_URL`             | `https://your-installation-domain.com` |
 
 13. Change the Application Mode to `production`.
@@ -59,3 +61,5 @@ To keep n8n up to date automatically:
     (You can use ChatGPT to help write this script.)
 3. Schedule the workflow to run every 24 hours.
     🔁 Also remember to update the NodeJS version in cPanel annually to stay within supported versions.
+
+**Source** [MattH](https://community.n8n.io/u/MattH)
