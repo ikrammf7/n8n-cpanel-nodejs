@@ -45,13 +45,13 @@ npm install n8n
 
 13. Change the Application Mode to `production`.
 
-🔐 Final Steps
+### 🔐 Final Steps
 
 14. Open your domain in a browser.
 15. Create an owner account – this will be used for login.
 16. Register a community license (optional) to unlock premium features.
 
-🔄 Optional: Auto-Update Workflow
+### 🔄 Optional: Auto-Update Workflow
 To keep n8n up to date automatically:
 1. Create a workflow using the Execute Command module.
 2. Write a shell script to update n8n.
